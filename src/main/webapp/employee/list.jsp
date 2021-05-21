@@ -1,7 +1,8 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="entity.Employee" %>
 <%@ page import="java.text.DateFormat" %>
-<%@ page import="java.text.SimpleDateFormat" %><%--
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.util.Date" %><%--
   Created by IntelliJ IDEA.
   User: namdt
   Date: 5/21/21

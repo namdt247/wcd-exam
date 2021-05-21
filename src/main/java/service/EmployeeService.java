@@ -19,7 +19,6 @@ public class EmployeeService {
 
     public boolean create(Employee obj) {
         obj.setStatus(1);
-        obj.setBirthday(sqlTime);
         return employeeRepository.save(obj);
     }
 

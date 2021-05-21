@@ -13,8 +13,8 @@ public class Employee {
     private int id;
     @Column(columnName = "fullName", columnType = "varchar(255)")
     private String fullName;
-    @Column(columnName = "birthday", columnType = "date")
-    private Date birthday;
+    @Column(columnName = "birthday", columnType = "varchar(255)")
+    private String birthday;
     @Column(columnName = "address", columnType = "varchar(255)")
     private String address;
     @Column(columnName = "position", columnType = "varchar(255)")
@@ -27,7 +27,7 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(int id, String fullName, Date birthday, String address, String position, String department, int status) {
+    public Employee(int id, String fullName, String birthday, String address, String position, String department, int status) {
         this.id = id;
         this.fullName = fullName;
         this.birthday = birthday;
@@ -53,11 +53,11 @@ public class Employee {
         this.fullName = fullName;
     }
 
-    public Date getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 
