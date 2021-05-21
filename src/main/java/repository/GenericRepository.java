@@ -97,7 +97,7 @@ public class GenericRepository<T> {
         return true;
     }
 
-    public final List<T> findAll(int a, int b) {
+    public final List<T> findAll() {
         List<T> result = new ArrayList<>(); // khởi tạo một danh sách rỗng.
         Entity entityInfor = clazz.getAnnotation(Entity.class);
         StringBuilder stringQuery = new StringBuilder();

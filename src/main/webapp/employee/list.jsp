@@ -1,5 +1,7 @@
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="entity.Employee" %><%--
+<%@ page import="entity.Employee" %>
+<%@ page import="java.text.DateFormat" %>
+<%@ page import="java.text.SimpleDateFormat" %><%--
   Created by IntelliJ IDEA.
   User: namdt
   Date: 5/21/21
@@ -7,7 +9,10 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<% ArrayList<Employee> listEmployee = (ArrayList<Employee>) request.getAttribute("listEmployee"); %>
+<%
+    ArrayList<Employee> listEmployee = (ArrayList<Employee>) request.getAttribute("listEmployee");
+    DateFormat dateFormat = new SimpleDateFormat("dd-mm-yyyy");
+%>
 <html>
 <head>
     <title>Title</title>

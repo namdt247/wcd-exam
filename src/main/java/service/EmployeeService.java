@@ -24,8 +24,6 @@ public class EmployeeService {
     }
 
     public List<Employee> getList() {
-        int a = 1;
-        int b = 10;
-        return employeeRepository.findAll(a,b);
+        return employeeRepository.findAll();
     }
 }
